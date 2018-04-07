@@ -1,0 +1,488 @@
+
+.header_space {
+  top:0 !important;
+}
+
+.toc-h1 {
+  color: $nav-active-text;
+  padding: 5px 15px;
+  font-size: 14px;
+}
+
+.navbar {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    transition: all 0.1s ease-in-out;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  transition: all 0.1s ease-in-out;
+    background-color: #15425f;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    // z-index: 51;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #3e88c1;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all 0.1s ease-in-out;
+    // z-index: 51;
+}
+
+  > a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+    display: block;
+    // z-index: 51;
+}
+
+.show {display: block;
+  transition: all 0.1s ease-in-out;
+}
+
+#header {
+  background: $header-bg;
+  height: 45px;
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
+  transition: top 0.3s;
+  display:block;
+  z-index: 5;
+
+  > a {
+    float: right;
+    padding: 7px 15px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    }
+
+  .logo {
+    position: relative;
+    top: 3px;
+    left: 15px;
+    height: 38px;
+    // margin: 5px;
+  }
+
+}
+
+.lang-selector {
+  font-family: MuseoSansRounded-700;
+  font-weight: normal;
+  font-style: normal;
+  transition: top 0.3s;
+}
+
+.toc-wrapper .search-results.visible {
+  border-bottom: 1px dashed #666;
+  &:before {
+    content: 'Search Results:';
+    display: block;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 29px;
+    padding-top: 10px;
+    font-family: MuseoSansRounded-700;
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+.toc-list-h1 {
+  &:before {
+    content: '';
+    display: block;
+    // padding-left: 15px;
+    // font-size: 16px;
+    // line-height: 29px;
+    // padding-top: 10px;
+    font-family: MuseoSansRounded-700;
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+// .toc-wrapper > .search {
+//   position: fixed;
+//   top: 1px;
+//   left: 230px;
+//   border: 1px solid #3f6b88;
+//   min-width: 100px;
+//   max-width: 1000px;
+//   width: calc( 50vw - 175px );
+//   transition: top 0.3s;
+//
+//   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+//     color: #fff;
+//   }
+//   ::-moz-placeholder { /* Firefox 19+ */
+//     color: #fff;
+//   }
+//   :-ms-input-placeholder { /* IE 10+ */
+//     color: #fff;
+//   }
+//   :-moz-placeholder { /* Firefox 18- */
+//     color: #fff;
+//   }
+//
+//   &:before {
+//     position: absolute;
+//     top: 13px;
+//     right: 10px;
+//     color: #fff;
+//     left: auto;
+//   }
+//
+//     input {
+//       background: none;
+//       border: 0;
+//       outline: 0;
+//       padding: 0 10px;
+//       height: 40px;
+//       line-height: 40px;
+//       width: 100%;
+//       color: #fff;
+//       font-weight: 100;
+//       position: relative;
+//       margin: 0;
+//     }
+// }
+//
+// .content {
+//   h1 {
+//     border-top: 5px solid #15425f;
+//     border-bottom: none;
+//     background: none;
+//   }
+//
+//   h2 {
+//     background: none;
+//   }
+//
+//   h1 + h2,
+//   h1 + div + h2 {
+//     margin-top: -40px;
+//   }
+// }
+
+
+// .page-wrapper {
+//
+//
+//       .highlight {
+//           background: #FFFFFF;
+//           color: #929292
+//       }
+//
+//       .highlight .hll {
+//           background-color: #EFEFEF
+//       }
+//
+//       .highlight .c {
+//           color: #929292
+//       }
+//
+//       .highlight .err {
+//           background: #C82829;
+//           color: #FFFFFF
+//       }
+//
+//       .highlight .k {
+//           color: #8959A8
+//       }
+//
+//       .highlight .l {
+//           color: #F5871F
+//       }
+//
+//       .highlight .n {
+//           color: #929292
+//       }
+//
+//       .highlight .o {
+//           color: #545454
+//       }
+//
+//       .highlight .p {
+//           color: #929292
+//       }
+//
+//       .highlight .cm {
+//           color: #929292
+//       }
+//
+//       .highlight .cp {
+//           color: #929292
+//       }
+//
+//       .highlight .c1 {
+//           color: #929292
+//       }
+//
+//       .highlight .cs {
+//           color: #929292
+//       }
+//
+//       .highlight .gd {
+//           color: #C82829
+//       }
+//
+//       .highlight .ge {
+//           font-style: italic
+//       }
+//
+//       .highlight .gh {
+//           color: #545454;
+//           font-weight: bold
+//       }
+//
+//       .highlight .gi {
+//           color: #718C00
+//       }
+//
+//       .highlight .gp {
+//           color: #718C00;
+//           font-weight: bold
+//       }
+//
+//       .highlight .gs {
+//           font-weight: bold
+//       }
+//
+//       .highlight .gu {
+//           color: #3E999F;
+//           font-weight: bold
+//       }
+//
+//       .highlight .kc {
+//           color: #8959A8
+//       }
+//
+//       .highlight .kd {
+//           color: #8959A8
+//       }
+//
+//       .highlight .kn {
+//           color: #3E999F
+//       }
+//
+//       .highlight .kp {
+//           color: #4271AE
+//       }
+//
+//       .highlight .kr {
+//           color: #8959A8
+//       }
+//
+//       .highlight .kt {
+//           color: #EAB700
+//       }
+//
+//       .highlight .ld {
+//           color: #718C00
+//       }
+//
+//       .highlight .m {
+//           color: #F5871F
+//       }
+//
+//       .highlight .s {
+//           color: #718C00
+//       }
+//
+//       .highlight .na {
+//           color: #4271AE
+//       }
+//
+//       .highlight .nb {
+//           color: #4271AE
+//       }
+//
+//       .highlight .nc {
+//           color: #EAB700
+//       }
+//
+//       .highlight .no {
+//           color: #EAB700
+//       }
+//
+//       .highlight .nd {
+//           color: #3E999F
+//       }
+//
+//       .highlight .ni {
+//           color: #545454
+//       }
+//
+//       .highlight .ne {
+//           color: #C82829
+//       }
+//
+//       .highlight .nf {
+//           color: #4271AE
+//       }
+//
+//       .highlight .nl {
+//           color: #545454
+//       }
+//
+//       .highlight .nn {
+//           color: #EAB700
+//       }
+//
+//       .highlight .nx {
+//           color: #4271AE
+//       }
+//
+//       .highlight .py {
+//           color: #545454
+//       }
+//
+//       .highlight .nt {
+//           color: #3E999F
+//       }
+//
+//       .highlight .nv {
+//           color: #C82829
+//       }
+//
+//       .highlight .ow {
+//           color: #3E999F
+//       }
+//
+//       .highlight .w {
+//           color: #545454
+//       }
+//
+//       .highlight .mf {
+//           color: #F5871F
+//       }
+//
+//       .highlight .mh {
+//           color: #F5871F
+//       }
+//
+//       .highlight .mi {
+//           color: #F5871F
+//       }
+//
+//       .highlight .mo {
+//           color: #F5871F
+//       }
+//
+//       .highlight .sb {
+//           color: #718C00
+//       }
+//
+//       .highlight .sc {
+//           color: #545454
+//       }
+//
+//       .highlight .sd {
+//           color: #929292
+//       }
+//
+//       .highlight .s2 {
+//           color: #718C00
+//       }
+//
+//       .highlight .se {
+//           color: #F5871F
+//       }
+//
+//       .highlight .sh {
+//           color: #718C00
+//       }
+//
+//       .highlight .si {
+//           color: #F5871F
+//       }
+//
+//       .highlight .sx {
+//           color: #718C00
+//       }
+//
+//       .highlight .sr {
+//           color: #718C00
+//       }
+//
+//       .highlight .s1 {
+//           color: #718C00
+//       }
+//
+//       .highlight .ss {
+//           color: #718C00
+//       }
+//
+//       .highlight .bp {
+//           color: #545454
+//       }
+//
+//       .highlight .vc {
+//           color: #C82829
+//       }
+//
+//       .highlight .vg {
+//           color: #C82829
+//       }
+//
+//       .highlight .vi {
+//           color: #C82829
+//       }
+//
+//       .highlight .il {
+//           color: #F5871F
+//       }
+// }
