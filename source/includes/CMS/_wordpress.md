@@ -1,1 +1,1 @@
-# WordPress 2
+# WordPress
