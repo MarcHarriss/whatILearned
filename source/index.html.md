@@ -12,6 +12,7 @@ includes:
   - introduction
   - languages/javascript
   - languages/sql
+  - languages/RxJS
 
 # frameworks
   - frameworks/angular5
